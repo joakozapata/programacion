@@ -1,0 +1,20 @@
+.footer{background:#0f172a;color:#f1f5f9;position:relative;overflow:hidden}
+.footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(96,165,250,.3),transparent)}
+.footer-top{padding:4rem 0 2rem}
+.footer-brand{max-width:300px}
+.footer-logo{color:#f8fafc;font-size:1.75rem;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;margin-bottom:1rem}
+.footer-logo:hover{color:#60a5fa}
+.footer-logo i{background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:1.5rem}
+.footer-text{color:rgba(241,245,249,.8);line-height:1.7;margin-bottom:1.5rem;font-size:.95rem}
+.social-links{display:flex;gap:1rem}
+.social-link{width:44px;height:44px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:1.1rem;transition:all .3s ease;backdrop-filter:blur(10px)}
+.social-link:hover{background:linear-gradient(135deg,#60a5fa,#a78bfa);color:#fff;transform:translateY(-3px);box-shadow:0 10px 25px rgba(96,165,250,.3)}
+.footer-title{color:#f8fafc;font-size:1rem;font-weight:600;margin-bottom:1.5rem;text-transform:uppercase;letter-spacing:.5px;position:relative}
+.footer-title::after{content:'';position:absolute;bottom:-8px;left:0;width:30px;height:2px;background:linear-gradient(90deg,#60a5fa,#a78bfa)}
+.footer-links{list-style:none;padding:0;margin:0}
+.footer-links li{margin-bottom:.75rem}
+.footer-links a{color:#94a3b8;text-decoration:none;font-size:.95rem;transition:all .3s ease;position:relative}
+.footer-links a:hover{color:#60a5fa;transform:translateX(5px)}
+.footer-bottom{padding:2rem 0;border-top:1px solid rgba(255,255,255,.1);background:rgba(15,23,42,.8);backdrop-filter:blur(20px)}
+.copyright{color:#64748b;font-size:.9rem}
+@media (max-width:768px){.footer-top{padding:3rem 0 1.5rem}.footer-brand{max-width:100%;margin-bottom:2rem}.footer-title{margin-top:1.5rem}.social-links{justify-content:center}}

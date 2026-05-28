@@ -1,0 +1,86 @@
+/* Fuente base recomendada (opcional, si no tienes una global) */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6; /* Un fondo suave para notar el contraste de la tarjeta */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* --- Estilos de la Tarjeta --- */
+.card {
+    margin: 25px;
+  background-color: rgba(15,23,42,.98);
+  border: none; /* Quitamos el borde por defecto si lo hubiera */
+  border-radius: 16px; /* Bordes muy redondeados */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Sombra suave y diffused */
+  overflow: hidden; /* Para que la imagen respete los bordes redondeados */
+  width: 18rem; /* Ancho fijo como en tu HTML */
+  max-width: 100%;
+  transition: all 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto al pasar el mouse por encima (Hover) */
+.card:hover {
+  transform: translateY(-5px); /* La tarjeta se eleva un poco */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* La sombra se hace más grande */
+}
+
+/* Imagen */
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Altura fija para que todas las tarjetas queden parejas */
+  object-fit: cover; /* La imagen cubre el espacio sin deformarse */
+  display: block;
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+  padding: 1.5rem;
+  text-align: center; /* Centra el texto para un look más de "producto" */
+}
+
+/* Título */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #c2c2c2;
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+
+/* Texto descriptivo */
+.card-text {
+  font-size: 0.95rem;
+  color: rgb(96,165,250);
+  line-height: 1.5;
+  margin-top: 8pxpx;
+}
+.card-precio
+
+/* --- Botón Moderno --- */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px; /* Botón tipo píldora */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Estilo para el botón (Basado en tu btn-primary, pero customizado) */
+.btn-primary {
+  background-color: #4f46e5; /* Un azul moderno (Indigo) */
+  color: white;
+  border: 2px solid #4f46e5;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca; /* Un tono más oscuro al pasar el mouse */
+  border-color: #4338ca;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3); /* Sombra de color en el hover */
+}
